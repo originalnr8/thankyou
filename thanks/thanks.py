@@ -14,13 +14,10 @@ def main():
         sayThanks(win)
         sayWhy(win)
         dtObject = datetime.now()
-        if dtObject.hour > 17:
+        if dtObject.hour > 5:
             intReference = 16
-        if intReference > 0:
-             intReference = 0
-        else:
-            intReference = randint(0,14)
-        time.sleep(1)
+        intReference = randint(0,15)
+        time.sleep(5)
         clearWindow(win)
 
     win.close()
